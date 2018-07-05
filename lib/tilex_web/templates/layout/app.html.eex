@@ -56,9 +56,6 @@
         <h1><a href="/">Today I Learned</a></h1>
         <h2>
           <a href="https://hashrocket.com" class="hr">A Hashrocket project</a>
-          <span>
-            <a href="https://twitter.com/<%= Application.get_env(:tilex, :default_twitter_handle)%>" class="twitter">Follow on Twitter</a>
-          </span>
         </h2>
       </div>
     </header>
@@ -100,9 +97,6 @@
               Hashrocket. We hope you enjoy learning along with us.
               <ul class="social">
                 <li>
-                  <%= link("/#{Application.get_env(:tilex, :default_twitter_handle)}", to: "https://twitter.com/#{Application.get_env(:tilex, :default_twitter_handle)}", class: "social_twitter") %>
-                </li>
-                <li>
                   <%= link("/hashrocket/tilex", to: "https://github.com/hashrocket/tilex", class: "social_github") %>
                 </li>
               </ul>
@@ -111,9 +105,6 @@
         </li>
         <li class="site_nav__statistics">
           <%= link("Statistics", to: "/statistics", class: "site_nav__link") %>
-        </li>
-        <li class="site_nav__twitter">
-            <%= link("Twitter", to: "https://twitter.com/#{Application.get_env(:tilex, :default_twitter_handle)}", class: "site_nav__link") %>
         </li>
         <li class="site_nav__surprise_me">
             <%= link("Surprise Me", to: "/random", class: "site_nav__link", rel: "nofollow") %>
