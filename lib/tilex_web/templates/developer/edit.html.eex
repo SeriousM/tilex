@@ -13,10 +13,6 @@
           <%= Guardian.Plug.current_resource(@conn).email %>
         </dd>
         <dt>
-          <%= label f, :twitter_handle %>
-          <%= error_tag f, :twitter_handle %>
-        </dt>
-        <dt>
           <%= label f, :editor %>
           <%= error_tag f, :editor %>
         </dt>
